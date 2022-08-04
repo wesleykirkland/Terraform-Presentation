@@ -4,7 +4,8 @@ locals {
 
   # AZ Calculation
   azs               = [for azletter in var.region_azs : "${var.region}${azletter}"]
-  existing_az_count = length(local.azs)
+  /* existing_az_count = length(local.azs) */
+  existing_az_count = length(data.aws_availability_zones.available.names)
 
   # We add bits to the overall bits base
   bitsbase = split("/", var.cidr)[1]

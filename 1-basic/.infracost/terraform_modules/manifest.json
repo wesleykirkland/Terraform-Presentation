@@ -1,0 +1,1 @@
+{"Modules":[{"Key":"vpc_active","Source":"registry.terraform.io/terraform-aws-modules/vpc/aws","Version":"3.14.2","Dir":".infracost/terraform_modules/vpc_active"}]}
